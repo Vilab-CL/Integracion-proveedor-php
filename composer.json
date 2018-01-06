@@ -1,0 +1,15 @@
+{
+    "name": "vilab/integracion",
+    "description": "Integracion",
+    "authors": [
+        {
+            "name": "Manuel Alba",
+            "email": "malba@labmovil.cl"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "nategood/httpful": "*",
+	"paragonie/easyrsa":"*"
+    }
+}
