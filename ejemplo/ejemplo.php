@@ -3,7 +3,7 @@ require '../integracion/vendor/autoload.php';
 use \Firebase\JWT\JWT;
 use Httpful\Request;
 
-$url = "http://integracion.vilab.cl";
+$url = "http://integracion.vilab.cl/integracion/index.php";
 $key = "labmovil";
 
 $user = array(
@@ -47,6 +47,8 @@ $uri = $url;
                  ->sendsType(\Httpful\Mime::FORM)
                 ->send();
 	$body = $response->body;
+
+
 
 	$body = json_decode($body);
 

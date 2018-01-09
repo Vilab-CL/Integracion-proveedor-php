@@ -93,6 +93,9 @@ $response = \Httpful\Request::post($url."login2")
                  ->sendsType(\Httpful\Mime::FORM)
                 ->send();
 	$body = $response->body;
+//print_r($body);
+
+
 	//$body = JWT::decode($body, $privateKey, array('RS256'));*/
 
 
@@ -102,11 +105,17 @@ $response = \Httpful\Request::post($url."login2")
 
 
 $crypttext= base64_decode($body->key);
+
+
+
 $res = openssl_get_privatekey($privateKey);
 
 openssl_private_decrypt($crypttext, $newsource, $res, OPENSSL_PKCS1_OAEP_PADDING ) ;
 
 
+//echo $newsource;
+
+JWT::$leeway = 5; 
 $result =  JWT::decode($body->data , $newsource, array('HS256'));
 
 print_r(json_encode($result));
