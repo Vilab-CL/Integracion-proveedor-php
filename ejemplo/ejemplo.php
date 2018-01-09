@@ -34,7 +34,7 @@ $user = array(
             );
 
 
-array_push($user["predios"],$predio)
+array_push($user["predios"],$predio);
 $token=  json_encode($user);
 
 
