@@ -4,7 +4,7 @@ $password ="TALCAPARISYLONDRES";
 $key_proovedor = "ViLaBesLaLUZ";
 $key_propia = "LabMovil";
 $key_system = "labmovil";
-$url ="http://192.168.1.24:3030/";
+$url ="http://api.vilab.cl/v1";
 
 $privateKey = <<<EOD
 -----BEGIN RSA PRIVATE KEY-----
