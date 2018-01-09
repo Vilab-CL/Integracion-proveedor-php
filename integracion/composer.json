@@ -1,0 +1,14 @@
+{
+    "name": "vilab/integracion",
+    "description": "Integracion",
+    "authors": [
+        {
+            "name": "Manuel Alba",
+            "email": "malba@vilab.cl"
+        }
+    ],
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "nategood/httpful": "*"
+    }
+}
