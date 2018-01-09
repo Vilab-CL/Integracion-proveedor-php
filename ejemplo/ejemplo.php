@@ -1,5 +1,5 @@
 <?php
-require 'vendor/autoload.php';
+require '../integracion/vendor/autoload.php';
 use \Firebase\JWT\JWT;
 use Httpful\Request;
 
