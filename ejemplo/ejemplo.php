@@ -13,6 +13,7 @@ $user = array(
     "telefono" => "96344738",
     "rut" => "18020677-9",
     "identificador" => 26645,
+    "auto_habilitar" => True,
     "saldo" => 20000,
     "predios" => array()
 );
